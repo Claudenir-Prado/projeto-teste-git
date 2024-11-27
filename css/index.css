@@ -1,0 +1,311 @@
+ @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;/*
+    overflow: hidden;*/
+  
+}
+
+.fotos {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 15% 70% 15%;
+    margin-bottom: 15px;
+    font-family: "Grenze Gotisch";
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-areas:
+    "f-cinco f-um f-um f-quatro"
+    "f-cinco f-dois f-dois f-quatro"
+    "f-cinco f-tres f-tres f-quatro"
+    
+}
+.fotos .foto p {
+    font-size: 15px;
+    line-height: 1rem;
+}
+
+.fotos .foto h1 {
+    margin: 0;
+    height: 15px;
+    
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: brown;
+    word-spacing: 0;
+   
+    
+}
+
+   .f-um {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: f-um;
+    background-color: rebeccapurple;
+    font-weight: 500;
+    color: aliceblue;
+    border-radius: 10px;
+   }
+
+   .f-dois {
+    display: flex;
+    flex-direction: column;
+    grid-area: f-dois;
+    background-color: blue;
+    border-radius: 10px;
+   }
+
+   .f-tres {
+    grid-area: f-tres;
+    background-color: green;
+    border-radius: 5px;
+   }
+
+   .f-quatro {
+    grid-area: f-quatro;
+    background-color: black;
+    border-radius: 10px;
+   }
+
+   .f-cinco {
+    grid-area: f-cinco;
+    background-color: yellow;
+    border-radius: 10px;
+   }
+
+   .f-seis {
+    grid-area: f-seis;
+   }
+
+   .f-sete {
+    grid-area: f-sete;
+   }
+
+   .f-oito {
+    grid-area: f-oito;
+   }
+
+   .f-nove {
+    grid-area: f-nove;
+   }
+
+   .f-dez {
+    grid-area: f-dez;
+   }
+
+   .f-onze {
+    grid-area: f-onze;
+   }
+
+   .f-doze {
+    grid-area: f-doze;
+   }
+
+   .f-treze {
+    grid-area: f-treze;
+   }
+
+   .f-quatorze {
+    grid-area: f-quatorze;
+   }
+
+   .f-quinze {
+    grid-area: f-quinze;
+   }
+   .f-dois h1 {
+    color: brown;
+    margin-top: 0;
+   }
+
+   .f-um {
+    display: flex;
+    flex-direction: row;
+
+   }
+
+
+   .f-um ul {
+    display: flex;
+    flex-direction: row;
+   
+   }
+
+   .f-um ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+     font-size: 20px;
+    
+   }
+
+    .f-um ul li a {
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 15px;
+    list-style: none;
+    color: #0101ff;
+    width: 100px;
+    outline: 2px solid black;
+    font-size: 20px;
+      
+   }
+
+   @media (width <=1440px) {
+    .fotos {
+           margin-bottom: 10px;
+           font-size: 20px;
+                
+        }
+    .f-um ul li a {
+            text-decoration: none;
+            margin: 20px;
+            border-radius: 15px;
+            list-style: none;
+            color: #0101ff;
+            width: 100px;
+            outline: 2px solid black;
+            font-size: 30px;
+            
+        }
+   .fotos .foto p {
+       font-size: 25px;
+       line-height: 0, 5rem;
+   }
+
+        .fotos .foto h1 {
+            margin: 20px;
+            height: 16px;
+        
+                  }
+
+        .foto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: brown;
+            word-spacing: 0;
+            line-height: 1.6rem;
+            font-size: 1.8rem;
+           
+        }
+   }
+
+   @media (width <= 1024px) {
+    .fotos {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 10% 30% 20% 20% 20%;
+            background-color: aqua;
+            margin-bottom: 20px;
+            grid-template-areas:
+                "f-um f-um f-um f-um"
+                "f-dois f-dois f-dois f-dois"
+                "f-tres f-tres f-tres f-tres"
+                "f-quatro f-quatro f-quatro f-quatro"
+                "f-cinco f-cinco f-cinco f-cinco"
+    
+        }
+
+        .fotos .f-cinco h1{
+            margin-bottom: 0;
+            font-size: 25px;
+        }
+
+           .fotos .foto p {
+               font-size: 16px;
+               line-height: 15px;
+               margin-top: 0;
+           }
+
+        .foto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: brown;
+            word-spacing: 0;
+           
+                
+            }
+
+            .fotos .foto h1 {
+                font-size: 24px;
+                margin: 5px;
+            }
+            .f-um ul {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+
+                           
+            }
+            .f-um ul li a {
+                font-size: 25px;
+                
+            }
+   
+ 
+    }
+   @media (width <=768px) {
+            .f-um ul li a {
+                text-decoration: none;
+                border: none;
+                border-radius: 15px;
+                list-style: none;
+                color: #0101ff;
+                width: 100px;
+                font-size: 20px;
+            
+            }
+             .fotos {
+                margin-bottom: 10px; 
+                font-size: 13px;
+                flex-wrap: wrap;
+                
+            }
+   }
+   @media (width <=425px) {
+             .f-um ul li a {
+                 text-decoration: none;
+                border: none;
+                border-radius: 15px;
+                list-style: none;
+                color: #0101ff;
+                width: 70px;
+                font-size: 18px;
+                word-spacing: 10px;
+                margin: 3px;
+                    
+            }
+                .fotos .foto p {
+                    font-size: 16px;
+                    line-height: 15px;
+                    margin-top: 0;
+                }
+            
+            .fotos .foto h1 {
+                margin: 5px;
+                height: 16px;
+            
+                }
+       
+                      
+}
